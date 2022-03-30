@@ -2,7 +2,7 @@ export interface configInterface{
     http: httpInterface,
     db: dbInterface
 }
-//
+
 interface httpInterface{
     port: number
 }
@@ -10,10 +10,10 @@ interface dbInterface{
     postgres: postgresInterface,
     mongodb: mongoInterface,
 }
-//
+
 interface postgresInterface {
     url: string,
-    port: string,
+    port: number,
     database: string
 }
 interface mongoInterface{
