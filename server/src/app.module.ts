@@ -6,15 +6,14 @@ import { join } from 'path';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UserModule } from './user/user.module';
-import { UserController } from './user/user.controller';
-import { UserService } from './user/user.service';
-import { AuthService } from './auth/auth.service';
-import { AuthController } from './auth/auth.controller';
 import { AuthModule } from './auth/auth.module';
+import configuration from './config/configuration';
+
+const mongodb = configuration.db.mongodb
 
 @Module({
   imports: [
-    MongooseModule.forRoot("mongodb://172.17.0.4:27017/nest"),
+    MongooseModule.forRoot(`mongodb://${mongodb.url}:${mongodb.port}/${mongodb.database.dbname}`),
     ServeStaticModule.forRoot({
     rootPath: join(__dirname,"..","client")
     }),

@@ -1,0 +1,19 @@
+http:
+  port: 3101
+
+db:
+  postgres:
+    url: '172.17.0.2'
+    port: 5432
+    database: 'postgres'
+
+  mongodb:
+    url: '172.17.0.4'
+    port: 27017
+    session: 
+      dbname: 'nest-session'
+      user: 'test'
+      password : 'test'
+      secret: 'secret-key'
+    database:
+      dbname: 'nest'
