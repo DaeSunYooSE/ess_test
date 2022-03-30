@@ -14,7 +14,6 @@ const config = () => {
       ) as configInterface;
   }
   else {
-    console.log(configs)
     return configs
   }
 };
