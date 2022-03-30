@@ -4,11 +4,19 @@ import { join } from 'path';
 import { configInterface } from './config.type';
 
 const YAML_CONFIG_FILENAME = 'config.yaml';
+var num: number = 0
 
 const config = () => {
-  return yaml.load(
-    readFileSync(join(__dirname, YAML_CONFIG_FILENAME), 'utf8'),
-  ) as configInterface;
+  if (num == 0) {
+    num += 1
+    return yaml.load(
+      readFileSync(join(__dirname, YAML_CONFIG_FILENAME), 'utf8'),
+      ) as configInterface;
+  }
+  else {
+    console.log(configs)
+    return configs
+  }
 };
-
-export default config()
+const configs = config()
+export default configs
