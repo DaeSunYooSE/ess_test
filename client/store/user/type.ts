@@ -1,12 +1,11 @@
 // 초기 상태 타입
 export type UserState = {
-  isLoggedIn: boolean;
-  userData: any;
-};
+  isLoggedIn: boolean
+  userData: any
+}
 
 // 액션 Payload 타입
 export type LoginPayload = {
-  userId: string;
-  password: string;
-};
-
+  userId: string
+  password: string
+}

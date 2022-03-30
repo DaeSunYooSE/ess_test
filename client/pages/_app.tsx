@@ -1,10 +1,8 @@
-import { AppProps } from 'next/app'
-import { wrapper } from '../store';
+import { AppProps } from "next/app"
+import { wrapper } from "../store"
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
-  return (
-      <Component {...pageProps} />
-  )
+  return <Component {...pageProps} />
 }
 
 export default wrapper.withRedux(MyApp)

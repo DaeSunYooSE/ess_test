@@ -10,10 +10,10 @@ db:
   mongodb:
     url: '172.17.0.4'
     port: 27017
-    session: 
+    session:
       dbname: 'nest-session'
       user: 'test'
-      password : 'test'
+      password: 'test'
       secret: 'secret-key'
     database:
       dbname: 'nest'
