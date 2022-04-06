@@ -26,10 +26,12 @@ const configuration: configInterface = {
       port: c.db.mongodb.port || 27017,
       database: {
         dbname: c.db.mongodb.database.dbname || 'nest',
+        user: c.db.mongodb.database.user || 'nest',
+        password: c.db.mongodb.database.password || 'nest-stnd',
       },
       session: {
-        user: c.db.mongodb.session.user || 'test',
-        password: c.db.mongodb.session.password || 'test',
+        user: c.db.mongodb.session.user || 'session',
+        password: c.db.mongodb.session.password || 'session-stnd',
         dbname: c.db.mongodb.session.dbname || 'nest-session',
         secret: c.db.mongodb.session.secret || 'secret-key',
       },

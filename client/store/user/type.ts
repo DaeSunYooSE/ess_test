@@ -9,3 +9,9 @@ export type LoginPayload = {
   userId: string
   password: string
 }
+
+export type RegisterPayload = {
+  userId: string
+  username: string
+  password: string
+}

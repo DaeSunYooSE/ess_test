@@ -1,51 +1,49 @@
 import { CustomLayout } from "components/layout"
 import React, { useState } from "react"
 import { useSelector } from "react-redux"
-import { RootState } from "../store"
+import { RootState } from "../../store"
 import { Button } from "react-bootstrap"
-import useUser from "../store/user/actionHooks"
+import useUser from "../../store/user/actionHooks"
 
-const Main = () => {
-  const { login, logout } = useUser()
+const Register = () => {
+  const { register } = useUser()
   const state = useSelector((state: RootState) => state.user)
   const [id, setID] = useState("")
+  const [name, setName] = useState("")
   const [pw, setPW] = useState("")
+  if (state.isLoggedIn) return (window.location.href = "/")
 
   const handleID = (e: any) => {
     setID(e.target.value)
+  }
+  const handleName = (e: any) => {
+    setName(e.target.value)
   }
   const handlePW = (e: any) => {
     setPW(e.target.value)
   }
 
-  const handleLogIn = () => {
-    login({ userId: id, password: pw })
+  const handleRegister = () => {
+    register({ userId: id, username: name, password: pw })
   }
 
   return (
     <>
       <div>
-        <p>
-          {state.isLoggedIn
-            ? state.userData?.userId + "님 환영합니다."
-            : "Login을 해주세요"}
-        </p>
-        <p>Login State: {state.isLoggedIn ? "로그인중" : "로그아웃"}</p>
+        <p> 회원가입 페이지 입니다.</p>
         <div>
+          Name : <input value={name} onInput={handleName} /> <br />
           ID : <input value={id} onInput={handleID} /> <br />
           PW : <input value={pw} type="password" onInput={handlePW} />
         </div>
-        <Button size="sm" variant="primary" onClick={handleLogIn}>
-          Login
+        <Button size="sm" variant="primary" onClick={handleRegister}>
+          Register
         </Button>
         &nbsp;
-        <Button size="sm" onClick={() => logout()}>
-          logout
-        </Button>
       </div>
       <CustomLayout />
     </>
   )
 }
 
-export default Main
+export default Register

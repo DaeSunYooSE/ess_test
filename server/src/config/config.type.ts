@@ -26,6 +26,8 @@ interface mongoInterface {
     secret: string
   }
   database: {
+    user: string
+    password: string
     dbname: string
   }
 }

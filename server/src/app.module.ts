@@ -14,7 +14,7 @@ const mongodb = configuration.db.mongodb
 @Module({
   imports: [
     MongooseModule.forRoot(
-      `mongodb://${mongodb.url}:${mongodb.port}/${mongodb.database.dbname}`,
+      `mongodb://${mongodb.database.user}:${mongodb.database.password}@${mongodb.url}:${mongodb.port}/${mongodb.database.dbname}`, //
     ),
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'client'),

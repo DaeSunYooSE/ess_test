@@ -2,9 +2,9 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common'
 import { InjectModel } from '@nestjs/mongoose'
 import { Model } from 'mongoose'
 
-import { User, userDocument, UserSchema } from 'src/schemas/user'
-import { logInUser, registerUser } from 'src/type/user.type'
-import { hashText, isHashValid } from 'src/util/hash'
+import { User, userDocument } from 'src/schemas/user'
+import { registerUser } from 'src/type/user.type'
+import { hashText } from 'src/util/hash'
 
 @Injectable()
 export class UserService {
@@ -12,14 +12,22 @@ export class UserService {
 
   async create(user: registerUser) {
     const { userId } = user
-    let { password } = user
-    if (this.checkUserByUserId(userId)) {
+    const checkUser = await this.checkUserByUserId(userId)
+    const now = Date.now()
+
+    if (checkUser !== null) {
       throw new HttpException('user alread exists', HttpStatus.BAD_REQUEST)
     }
-    password = await hashText(password)
+
+    const password = await hashText(user.password)
     try {
-      await this.userModel.create({ userId, password })
-      return true
+      await this.userModel.create({
+        userId,
+        username: user.username,
+        password,
+        createDate: now,
+      })
+      return { statusCode: 200, message: 'success to create' }
     } catch (e) {
       throw new HttpException(
         e + ' & cannot create user',
@@ -28,7 +36,7 @@ export class UserService {
     }
   }
 
-  async checkUserByUserId(userId: string): Promise<User | undefined> {
+  async checkUserByUserId(userId: string): Promise<User> | null {
     // lean is convert Document to Object. POJO.memory > lean.memory
     const user = await this.userModel.findOne({ userId }).lean().exec()
     return user

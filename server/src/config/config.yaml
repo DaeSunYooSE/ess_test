@@ -12,8 +12,10 @@ db:
     port: 27017
     session:
       dbname: 'nest-session'
-      user: 'test'
-      password: 'test'
+      user: 'session'
+      password: 'session-stnd'
       secret: 'secret-key'
     database:
       dbname: 'nest'
+      user: 'nest'
+      password: 'nest-stnd'
