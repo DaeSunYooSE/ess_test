@@ -9,7 +9,6 @@ import configuration from './config/configuration'
 const config = configuration
 const mongo = config.db.mongodb
 
-console.log(config.db.postgres.url)
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule)
   app.useStaticAssets(join(__dirname, '..', 'client'))

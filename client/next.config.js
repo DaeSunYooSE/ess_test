@@ -12,6 +12,7 @@ const nextConfig = {
   exportPathMap: () => ({
     // Next Export 에서 사용하는 값
     "/": { page: "/" },
+    "/register": { page: "/register" },
   }),
 }
 

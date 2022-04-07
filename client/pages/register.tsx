@@ -1,9 +1,9 @@
 import { CustomLayout } from "components/layout"
 import React, { useState } from "react"
 import { useSelector } from "react-redux"
-import { RootState } from "../../store"
+import { RootState } from "../store"
 import { Button } from "react-bootstrap"
-import useUser from "../../store/user/actionHooks"
+import useUser from "../store/user/actionHooks"
 
 const Register = () => {
   const { register } = useUser()
