@@ -1,8 +1,19 @@
-import { AppProps } from "next/app"
-import { wrapper } from "../store"
+import { AppProps } from "next/app";
+import { wrapper } from "../store";
+import "bootstrap/dist/css/bootstrap.css";
+import Main from "components/Main";
+import { useEffect } from "react";
+import { CustomLayout } from "components/layout";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
-  return <Component {...pageProps} />
-}
+  useEffect(() => {}, []);
+  return (
+    <Main>
+      <CustomLayout>
+        <Component {...pageProps} />
+      </CustomLayout>
+    </Main>
+  );
+};
 
-export default wrapper.withRedux(MyApp)
+export default wrapper.withRedux(MyApp);
