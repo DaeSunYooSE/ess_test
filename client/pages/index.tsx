@@ -1,26 +1,26 @@
-import { CustomLayout } from "components/layout"
-import React, { useState } from "react"
-import { useSelector } from "react-redux"
-import { RootState } from "../store"
-import { Button } from "react-bootstrap"
-import useUser from "../store/user/actionHooks"
+import { CustomLayout } from "components/layout";
+import React, { useState } from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "../store";
+import { Button } from "react-bootstrap";
+import useUser from "../store/user/actionHooks";
 
 const Main = () => {
-  const { login, logout } = useUser()
-  const state = useSelector((state: RootState) => state.user)
-  const [id, setID] = useState("")
-  const [pw, setPW] = useState("")
+  const { login, logout } = useUser();
+  const state = useSelector((state: RootState) => state.user);
+  const [id, setID] = useState("");
+  const [pw, setPW] = useState("");
 
   const handleID = (e: any) => {
-    setID(e.target.value)
-  }
+    setID(e.target.value);
+  };
   const handlePW = (e: any) => {
-    setPW(e.target.value)
-  }
+    setPW(e.target.value);
+  };
 
   const handleLogIn = () => {
-    login({ userId: id, password: pw })
-  }
+    login({ userId: id, password: pw });
+  };
 
   return (
     <>
@@ -43,9 +43,8 @@ const Main = () => {
           logout
         </Button>
       </div>
-      <CustomLayout />
     </>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;

@@ -1,8 +1,24 @@
-import { AppProps } from "next/app"
-import { wrapper } from "../store"
+import { CustomLayout } from "components/layout";
+import { AppProps } from "next/app";
+import { useEffect, useState } from "react";
+import { wrapper } from "../store";
+import "react-datepicker/dist/react-datepicker.css";
+import "react-toastify/dist/ReactToastify.min.css";
+import "helpers/initFA";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
-  return <Component {...pageProps} />
-}
+  const [loading, setLoading] = useState(false);
 
-export default wrapper.withRedux(MyApp)
+  useEffect(() => {
+    setLoading(true);
+  }, []);
+
+  if (!loading) return <div></div>;
+  return (
+    <CustomLayout>
+      <Component {...pageProps} children={<CustomLayout />} />
+    </CustomLayout>
+  );
+};
+
+export default wrapper.withRedux(MyApp);
