@@ -65,7 +65,7 @@ const RealTimeUsers = ({ data }) => {
         </div>
       </Card.Body>
       <Card.Footer className="bg-transparent text-end light">
-        <Link to="#!" className="text-white">
+        <Link href="#!" className="text-white">
           Real-time Data
         </Link>
 

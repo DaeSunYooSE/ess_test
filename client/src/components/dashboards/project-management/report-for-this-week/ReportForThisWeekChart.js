@@ -2,7 +2,7 @@ import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import { getColor } from 'helpers/utils';
 import * as echarts from 'echarts/core';
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
 import { BarChart } from 'echarts/charts';
 import {
   GridComponent,
@@ -100,7 +100,7 @@ const getOption = data => ({
 
 const ReportForThisWeekChart = forwardRef(({ data }, ref) => {
   return (
-    <ReactEChartsCore
+    <EChartsReactCore
       echarts={echarts}
       ref={ref}
       option={getOption(data)}

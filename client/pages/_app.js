@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import 'helpers/initFA';
-import { CustomLayout } from '../components/layout';
+import CustomLayout from '../components/layout';
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(false);

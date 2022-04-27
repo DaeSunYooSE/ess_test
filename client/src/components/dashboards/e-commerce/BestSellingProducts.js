@@ -51,7 +51,7 @@ const BestSellingTableRow = ({ product, totalPrice, totalOrder }) => {
             <h6 className="mb-1 fw-semi-bold">
               <Link
                 className="text-dark stretched-link"
-                to="/e-commerce/product/product-details"
+                href="/e-commerce/product/product-details"
               >
                 {title}
               </Link>
@@ -124,7 +124,7 @@ const BestSellingProducts = ({ products }) => {
             </Form.Select>
           </Col>
           <Col xs="auto">
-            <Button variant="falcon-default" size="sm" as={Link} to="#!">
+            <Button variant="falcon-default" size="sm" as={Link} href="#!">
               View All
             </Button>
           </Col>

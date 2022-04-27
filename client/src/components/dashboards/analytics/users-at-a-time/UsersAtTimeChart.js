@@ -1,6 +1,6 @@
 import React from 'react';
 import * as echarts from 'echarts/core';
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
 import { HeatmapChart } from 'echarts/charts';
 import {
   GridComponent,
@@ -174,7 +174,7 @@ const getOptions = () => ({
 
 const UsersAtTimeChart = () => {
   return (
-    <ReactEChartsCore
+    <EChartsReactCore
       echarts={echarts}
       option={getOptions()}
       style={{ height: '24.75rem' }}

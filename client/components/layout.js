@@ -2,7 +2,7 @@ import MainLayout from 'layouts/MainLayout';
 import Main from 'Main';
 import Head from 'next/head';
 
-export const CustomLayout = props => {
+const CustomLayout = props => {
   return (
     <>
       <Head>
@@ -32,3 +32,5 @@ export const CustomLayout = props => {
     </>
   );
 };
+
+export default CustomLayout;

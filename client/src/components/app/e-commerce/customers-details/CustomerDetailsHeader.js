@@ -38,17 +38,17 @@ const CustomerDetailsHeader = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu align={isRTL ? 'end' : 'start'}>
-                <Dropdown.Item as={Link} to="#!">
+                <Dropdown.Item as={Link} href="#!">
                   Edit
                 </Dropdown.Item>
-                <Dropdown.Item as={Link} to="#!">
+                <Dropdown.Item as={Link} href="#!">
                   Report
                 </Dropdown.Item>
-                <Dropdown.Item as={Link} to="#!">
+                <Dropdown.Item as={Link} href="#!">
                   Archive
                 </Dropdown.Item>
                 <Dropdown.Divider as="div" />
-                <Dropdown.Item as={Link} to="#!" className="text-danger">
+                <Dropdown.Item as={Link} href="#!" className="text-danger">
                   Delete user
                 </Dropdown.Item>
               </Dropdown.Menu>

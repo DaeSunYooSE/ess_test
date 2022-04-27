@@ -55,14 +55,14 @@ const ProductList = ({ product, index }) => {
               <Col lg={8}>
                 <h5 className="mt-3 mt-sm-0">
                   <Link
-                    to={`/e-commerce/product/product-details/${id}`}
+                    href={`/e-commerce/product/product-details/${id}`}
                     className="text-dark fs-0 fs-lg-1"
                   >
                     {name}
                   </Link>
                 </h5>
                 <p className="fs--1 mb-2 mb-md-3">
-                  <Link to="#!" className="text-500">
+                  <Link href="#!" className="text-500">
                     {category}
                   </Link>
                 </p>

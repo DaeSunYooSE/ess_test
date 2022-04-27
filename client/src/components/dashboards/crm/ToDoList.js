@@ -102,7 +102,7 @@ const ToDoList = () => {
           as={Link}
           variant="link"
           size="sm"
-          to="#!"
+          href="#!"
           className="w-100 py-2"
         >
           <FontAwesomeIcon icon="plus" className="me-1 fs--2" />

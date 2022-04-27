@@ -47,7 +47,7 @@ const BillingHeader = ({ ...rest }) => {
               </li>
             </ul>
             <p className="fs--2 mb-0">
-              Read the full <Link to="#!">Standard License</Link>
+              Read the full <Link href="#!">Standard License</Link>
             </p>
           </Dropdown.Item>
           <Dropdown.Divider className="my-0" />
@@ -67,7 +67,7 @@ const BillingHeader = ({ ...rest }) => {
               </li>
             </ul>
             <p className="fs--2 mb-0">
-              Read the full <Link to="#!">Extended License</Link>
+              Read the full <Link href="#!">Extended License</Link>
             </p>
           </Dropdown.Item>
         </Dropdown.Menu>

@@ -125,4 +125,4 @@ WeeklySales.propTypes = {
   amountClassName: PropTypes.string
 };
 
-// export default WeeklySales;
+export default WeeklySales;

@@ -39,7 +39,7 @@ const AuthCardLayout = ({ leftSideContent, children, footer = true }) => {
                     <div className="z-index-1 position-relative light">
                       <Link
                         className="link-light mb-4 font-sans-serif fw-bolder fs-4 d-inline-block"
-                        to="/"
+                        href="/"
                       >
                         falcon
                       </Link>
@@ -58,14 +58,14 @@ const AuthCardLayout = ({ leftSideContent, children, footer = true }) => {
                         Read our{' '}
                         <Link
                           className="text-decoration-underline text-white"
-                          to="#!"
+                          href="#!"
                         >
                           terms
                         </Link>{' '}
                         and{' '}
                         <Link
                           className="text-decoration-underline text-white"
-                          to="#!"
+                          href="#!"
                         >
                           conditions{' '}
                         </Link>

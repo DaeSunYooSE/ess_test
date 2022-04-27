@@ -220,7 +220,7 @@ const DraggableExample = () => (
         <p className="mt-2 mb-0">
           Here is the example of the Multiple Container Sortable feature of the
           Draggable library. We also design{' '}
-          <Link to="/app/kanban">Kanban Board</Link> using this Draggable
+          <Link href="/app/kanban">Kanban Board</Link> using this Draggable
           Library.{' '}
           <b>You can drag any card in between the two columns below:</b>
         </p>

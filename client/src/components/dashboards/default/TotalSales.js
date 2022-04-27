@@ -5,7 +5,7 @@ import { Card, Form } from 'react-bootstrap';
 import FalconCardHeader from 'components/common/FalconCardHeader';
 import Flex from 'components/common/Flex';
 import * as echarts from 'echarts/core';
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
 import { LineChart } from 'echarts/charts';
 
 import {
@@ -148,7 +148,7 @@ const TotalSales = ({ data }) => {
       />
 
       <Card.Body>
-        <ReactEChartsCore
+        <EChartsReactCore
           echarts={echarts}
           option={getOptions(months[month], data[month])}
           style={{ height: '18.4375rem' }}

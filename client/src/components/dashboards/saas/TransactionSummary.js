@@ -24,7 +24,7 @@ const TransactionItem = ({
         <Flex alignItems="center" className="position-relative">
           <Image src={img} alt={title} className="me-2" width={30} />
           <div className="flex-1">
-            <Link to="#!" className="stretched-link">
+            <Link href="#!" className="stretched-link">
               <h6 className="mb-0">{title}</h6>
             </Link>
             <p className="mb-0">{subtitle}</p>

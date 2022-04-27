@@ -19,7 +19,7 @@ const DealForeCastTableRow = ({ item, isLast }) => {
           }
         )}
       >
-        <Link to="/e-commerce/customer-details">{item.owner}</Link>
+        <Link href="/e-commerce/customer-details">{item.owner}</Link>
       </td>
       <td
         className={classNames('align-middle text-center', {

@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
 import { getColor } from 'helpers/utils';
 import FalconComponentCard from 'components/common/FalconComponentCard';
 import * as echarts from 'echarts/core';
@@ -189,7 +189,7 @@ const chartCode = `function ChartOptions() {
     updateAxisPointer: updateAxisPointer
   };
   return (
-    <ReactEChartsCore
+    <EChartsReactCore
       echarts={echarts}
       ref={chartRef}
       option={getOption()}
@@ -208,7 +208,7 @@ const LineShareDatasetChart = () => {
         code={chartCode}
         language="jsx"
         scope={{
-          ReactEChartsCore,
+          EChartsReactCore,
           echarts,
           getColor
         }}

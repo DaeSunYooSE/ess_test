@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import * as echarts from 'echarts/core';
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
 import { MapChart } from 'echarts/charts';
 import {
   GridComponent,
@@ -98,7 +98,7 @@ const getOptions = (data, maxZoomLevel, minZoomLevel) => ({
 const WorldMap = forwardRef(
   ({ data, style, minZoomLevel = 1, maxZoomLevel = 5 }, ref) => {
     return (
-      <ReactEChartsCore
+      <EChartsReactCore
         ref={ref}
         echarts={echarts}
         option={getOptions(data, maxZoomLevel, minZoomLevel)}

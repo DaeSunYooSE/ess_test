@@ -20,7 +20,7 @@ const LandingRightSideNavItem = () => {
   return (
     <Nav navbar className="ms-auto">
       <Nav.Item>
-        <Nav.Link as={Link} to="/">
+        <Nav.Link as={Link} href="/">
           <OverlayTrigger
             placement="bottom"
             overlay={<Tooltip id="dashboardTooltip">Dashboard</Tooltip>}
@@ -37,7 +37,7 @@ const LandingRightSideNavItem = () => {
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link as={Link} to="/documentation/getting-started">
+        <Nav.Link as={Link} href="/documentation/getting-started">
           <OverlayTrigger
             placement="bottom"
             overlay={<Tooltip id="dashboardTooltip">Documentation</Tooltip>}
@@ -63,7 +63,7 @@ const LandingRightSideNavItem = () => {
       <Nav.Item>
         <Nav.Link
           as={Link}
-          to="#!"
+          href="#!"
           onClick={() => setShowRegistrationModal(!showRegistrationModal)}
         >
           Register

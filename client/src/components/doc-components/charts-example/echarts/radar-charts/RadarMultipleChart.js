@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
 import { getColor, rgbaColor } from 'helpers/utils';
 import FalconComponentCard from 'components/common/FalconComponentCard';
 import { RadarChart } from 'echarts/charts';
@@ -243,7 +243,7 @@ const chartCode = `function ChartOptions() {
       return () => window.removeEventListener('resize', updateDimensions);
     }, []);
     return (
-      <ReactEChartsCore
+      <EChartsReactCore
         echarts={echarts}
         option={getOption()}
         ref={chartRef}
@@ -267,7 +267,7 @@ const RadarMultipleChart = () => {
         code={chartCode}
         language="jsx"
         scope={{
-          ReactEChartsCore,
+          EChartsReactCore,
           echarts,
           getColor,
           rgbaColor,

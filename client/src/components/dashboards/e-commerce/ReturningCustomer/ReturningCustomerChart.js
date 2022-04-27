@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import * as echarts from 'echarts/core';
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
 import { LineChart } from 'echarts/charts';
 import {
   GridComponent,
@@ -180,7 +180,7 @@ const ReturningCustomerChart = forwardRef(
   ({ newData, returningData, month }, ref) => {
     return (
       <>
-        <ReactEChartsCore
+        <EChartsReactCore
           ref={ref}
           echarts={echarts}
           option={getOptions(newData, returningData, month)}

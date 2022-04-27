@@ -50,7 +50,7 @@ const FalconComponentCardHeader = ({
                 {isRTL ? (
                   <>
                     <HashLink
-                      to={`${location.pathname}#${camelize(title)}`}
+                      href={`${location.pathname}#${camelize(title)}`}
                       className="hover-actions ps-2"
                       style={{ top: 0, left: '-25px' }}
                     >
@@ -62,7 +62,7 @@ const FalconComponentCardHeader = ({
                   <>
                     {title}
                     <HashLink
-                      to={`${location.pathname}#${camelize(title)}`}
+                      href={`${location.pathname}#${camelize(title)}`}
                       className="hover-actions ps-2"
                       style={{ top: 0, right: '-25px' }}
                     >

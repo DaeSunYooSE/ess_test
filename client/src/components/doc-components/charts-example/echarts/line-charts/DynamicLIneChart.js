@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
 import { getColor } from 'helpers/utils';
 import FalconComponentCard from 'components/common/FalconComponentCard';
 
@@ -133,7 +133,7 @@ const chartCode = `function chartOptions(){
     }, []);
 
   return (
-    <ReactEChartsCore
+    <EChartsReactCore
       echarts={echarts}
       ref={chartRef}
       option={getOption()}
@@ -150,7 +150,7 @@ const DynamicLineChart = () => {
         code={chartCode}
         language="jsx"
         scope={{
-          ReactEChartsCore,
+          EChartsReactCore,
           echarts,
           getColor,
           dayjs,

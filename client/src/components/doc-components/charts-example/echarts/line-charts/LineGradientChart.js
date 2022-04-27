@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
 import { getColor } from 'helpers/utils';
 import FalconComponentCard from 'components/common/FalconComponentCard';
 import { LineChart } from 'echarts/charts';
@@ -156,7 +156,7 @@ const chartCode = `function ChartOptions() {
       }
   });
   return (
-    <ReactEChartsCore
+    <EChartsReactCore
       echarts={echarts}
       option={getOption()}
       style={{ height: '18.75rem' }}
@@ -173,7 +173,7 @@ const LineGradientChart = () => {
         code={chartCode}
         language="jsx"
         scope={{
-          ReactEChartsCore,
+          EChartsReactCore,
           echarts,
           getColor,
           dayjs,

@@ -92,9 +92,9 @@ const InvitePeople = () => {
 
               <p className="mb-2 fs--1">
                 Once you’ve invited friends, you can{' '}
-                <Link to="#!">view the status of your referrals</Link>{' '}
+                <Link href="#!">view the status of your referrals</Link>{' '}
                 <br className="d-none d-lg-block d-xxl-none" /> or visit our{' '}
-                <Link to="#!">Help Center</Link> if you have any questions.{' '}
+                <Link href="#!">Help Center</Link> if you have any questions.{' '}
               </p>
             </Col>
           </Row>

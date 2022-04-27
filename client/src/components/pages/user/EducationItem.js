@@ -9,12 +9,12 @@ export const EducationItem = ({ details, isLast }) => {
   const { logo, institution, degree, duration, location, verified } = details;
   return (
     <Flex>
-      <Link to="#!">
+      <Link href="#!">
         <Avatar size="3xl" src={logo} width={56} />
       </Link>
       <div className="flex-1 position-relative ps-3">
         <h6 className="fs-0 mb-0">
-          <Link to="#!">{institution}</Link>
+          <Link href="#!">{institution}</Link>
           {verified && <VerifiedBadge />}
         </h6>
         <p className="mb-1">{degree}</p>

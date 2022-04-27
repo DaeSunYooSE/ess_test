@@ -52,7 +52,7 @@ const MostLeads = () => {
           ))}
         </Col>
       </Card.Body>
-      <FalconCardFooterLink title="Primary" size="sm" to="#!" />
+      <FalconCardFooterLink title="Primary" size="sm" href="#!" />
     </Card>
   );
 };

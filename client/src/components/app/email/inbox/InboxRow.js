@@ -137,7 +137,7 @@ const InboxRow = ({ email, isSelectedItem, toggleSelectedItem }) => {
               <Avatar src={img} size="s" rounded="soft" />
               <div className="flex-1 ms-2">
                 <Link
-                  to="/email/email-detail"
+                  href="/email/email-detail"
                   className={classNames('stretched-link inbox-link', {
                     'fw-bold': !read
                   })}
@@ -153,7 +153,7 @@ const InboxRow = ({ email, isSelectedItem, toggleSelectedItem }) => {
             </Flex>
           </Col>
           <Col>
-            <Link className="d-block inbox-link" to="/email/email-detail">
+            <Link className="d-block inbox-link" href="/email/email-detail">
               <span className={classNames({ 'fw-bold': !read })}>{title}</span>
               <span className="mx-1">&ndash;</span>
               <span>{description}</span>

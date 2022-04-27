@@ -15,7 +15,7 @@ const FeedEvent = ({ title, calender, author, regFee, eventImg }) => (
             <Calendar {...calender} />
             <div className="fs--1 ms-2">
               <h5 className="fs-0 text-capitalize">
-                <Link to="/events/event-detail">{title}</Link>
+                <Link href="/events/event-detail">{title}</Link>
               </h5>
               <p className="mb-0 text-capitalize">
                 by <a href="#!">{author}</a>

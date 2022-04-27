@@ -53,7 +53,7 @@ const KanbanModal = () => {
           <h4 className="mb-1">Add a new illustration to the landing page</h4>
           <p className="fs--2 mb-0">
             Added by{' '}
-            <Link to="#!" className="text-600 fw-semi-bold">
+            <Link href="#!" className="text-600 fw-semi-bold">
               Antony
             </Link>
           </p>
@@ -79,7 +79,7 @@ const KanbanModal = () => {
                   The illustration must match to the contrast of the theme. The
                   illustraion must described the concept of the design. To know
                   more about the theme visit the page.{' '}
-                  <Link to="/" target="_blank" rel="noopener noreferrer">
+                  <Link href="/" target="_blank" rel="noopener noreferrer">
                     https://falconreact.prium.me/
                   </Link>
                 </p>

@@ -35,7 +35,7 @@ const BillingCard = () => {
       <div className="text-center mt-2">
         <small className="d-inline-block">
           By continuing, you are agreeing to our subscriber{' '}
-          <Link to="#!">terms</Link> and will be charged at the end of the
+          <Link href="#!">terms</Link> and will be charged at the end of the
           trial.
         </small>
       </div>

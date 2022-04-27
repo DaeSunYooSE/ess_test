@@ -20,7 +20,7 @@ const columns = [
     },
     Cell: rowData => {
       const { customer } = rowData.row.original;
-      return <Link to="/e-commerce/customer-details">{customer}</Link>;
+      return <Link href="/e-commerce/customer-details">{customer}</Link>;
     }
   },
   {

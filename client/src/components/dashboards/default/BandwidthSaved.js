@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { getColor } from 'helpers/utils';
 import * as echarts from 'echarts/core';
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
 import { GaugeChart } from 'echarts/charts';
 import {
   GridComponent,
@@ -102,7 +102,7 @@ const BandwidthSaved = ({ bodyClassName }) => {
         direction="column"
         alignItems="between"
       >
-        <ReactEChartsCore
+        <EChartsReactCore
           echarts={echarts}
           option={getOptions(93)}
           style={{ height: '10.3rem', widht: '10.3rem' }}

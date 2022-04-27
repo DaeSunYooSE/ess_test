@@ -125,7 +125,7 @@ const EmailDetail = () => {
                 variant="falcon-default"
                 size="sm"
                 icon="reply"
-                to="#!"
+                href="#!"
               >
                 Reply
               </IconButton>
@@ -135,7 +135,7 @@ const EmailDetail = () => {
                 size="sm"
                 className="ms-2"
                 icon="location-arrow"
-                to="#!"
+                href="#!"
               >
                 Forward
               </IconButton>

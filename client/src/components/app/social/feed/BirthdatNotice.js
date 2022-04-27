@@ -12,7 +12,7 @@ const BirthdayNotice = ({ name, profileLink, className }) => {
         <Flex>
           <FontAwesomeIcon icon="gift" className="fs-0 text-warning" />
           <div className="ms-2 flex-1">
-            <Link className="fw-semi-bold" to={profileLink}>
+            <Link className="fw-semi-bold" href={profileLink}>
               {name}
             </Link>
             's Birthday is today

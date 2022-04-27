@@ -39,7 +39,7 @@ const PricingAlt = () => {
                 Looking for personal or small team task management?
               </h5>
               <p className="fs-1">
-                Try the <Link to="#!">basic version</Link> of Falcon
+                Try the <Link href="#!">basic version</Link> of Falcon
               </p>
             </Col>
           </Row>

@@ -23,7 +23,7 @@ const ProjectTable = ({ data }) => {
             })}
           >
             <>
-              <Link to="#!">
+              <Link href="#!">
                 <h6 className="mb-0">
                   <FontAwesomeIcon
                     icon="circle"
@@ -32,7 +32,7 @@ const ProjectTable = ({ data }) => {
                   {project.project}
                 </h6>
               </Link>
-              <Link className="fs--2 text-600 mb-0" to="#!">
+              <Link className="fs--2 text-600 mb-0" href="#!">
                 {project.team}
               </Link>
             </>

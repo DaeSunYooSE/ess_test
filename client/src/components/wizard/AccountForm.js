@@ -73,8 +73,8 @@ const AccountForm = ({ register, errors, watch }) => {
         errors={errors}
         label={
           <>
-            I accept the <Link to="#!"> terms</Link> and{' '}
-            <Link to="#!"> privacy policy</Link>
+            I accept the <Link href="#!"> terms</Link> and{' '}
+            <Link href="#!"> privacy policy</Link>
           </>
         }
         name="agreedToTerms"

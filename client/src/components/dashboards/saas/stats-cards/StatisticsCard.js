@@ -52,7 +52,7 @@ const StatisticsCard = ({ stat, ...rest }) => {
             decimal="."
           />
         </div>
-        <Link to={link} className="fw-semi-bold fs--1 text-nowrap">
+        <Link href={link} className="fw-semi-bold fs--1 text-nowrap">
           {linkText}
           <FontAwesomeIcon
             icon="angle-right"

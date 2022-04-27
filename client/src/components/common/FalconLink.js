@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const FalconLink = ({
-  to = '#!',
+  href = '#!',
   icon = 'chevron-right',
   title,
   className

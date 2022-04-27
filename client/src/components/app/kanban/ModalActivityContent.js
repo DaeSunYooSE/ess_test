@@ -12,12 +12,12 @@ const ModalActivityContent = () => {
           key={activity.id}
           className={!(activities.length - 1 === index) && 'mb-3'}
         >
-          <Link to="/user/profile">
+          <Link href="/user/profile">
             <Avatar src={activity.user.avatar} size="l" />
           </Link>
           <div className="flex-1 ms-2 fs--1">
             <p className="mb-0">
-              <Link to="/user/profile" className="fw-semi-bold">
+              <Link href="/user/profile" className="fw-semi-bold">
                 {activity.user.name}{' '}
               </Link>
               {activity.activity}

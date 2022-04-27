@@ -17,7 +17,7 @@ const Starter = () => {
             <Button
               variant="falcon-primary"
               as={Link}
-              to="/documentation/getting-started"
+              href="/documentation/getting-started"
             >
               Getting started
             </Button>

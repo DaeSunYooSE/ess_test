@@ -1,6 +1,6 @@
 import React from 'react';
 import * as echarts from 'echarts/core';
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
 import { getColor } from 'helpers/utils';
 
 const getOptions = () => ({
@@ -95,7 +95,7 @@ const getOptions = () => ({
 
 const DealStorageFunnelChart = () => {
   return (
-    <ReactEChartsCore
+    <EChartsReactCore
       echarts={echarts}
       option={getOptions()}
       style={{ height: '10rem' }}

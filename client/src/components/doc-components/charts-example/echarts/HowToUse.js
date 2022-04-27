@@ -7,7 +7,7 @@ import FalconEditor from 'components/common/FalconEditor';
 import BasicBarChart from 'components/doc-components/charts-example/echarts/bar-charts/BasicBarChart';
 
 const structureCode = `// import the core library.
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
 
 // Import the echarts core module, which provides the necessary interfaces for using echarts.
 import * as echarts from 'echarts/core';
@@ -36,8 +36,8 @@ echarts.use([
   LegendComponent
 ]);
 
-// The usage of ReactEChartsCore are same with above.
-<ReactEChartsCore
+// The usage of EChartsReactCore are same with above.
+<EChartsReactCore
   echarts={echarts}
   option={getOption()}
   style={{ height: '18.75rem' }}

@@ -25,7 +25,7 @@ const FeedCardHeader = ({
             <Avatar size="2xl" src={avatarSrc} className={status} />
             <div className="flex-1 align-self-center ms-2">
               <p className="mb-1 lh-1">
-                <Link className="fw-semi-bold" to="/user/profile">
+                <Link className="fw-semi-bold" href="/user/profile">
                   {name}
                 </Link>
                 {!!share && (

@@ -52,7 +52,7 @@ const UsersWidgets = () => {
             </Card.Body>
             <FalconCardFooterLink
               title="All Notifications"
-              to="/social/notifications"
+              href="/social/notifications"
               size="sm"
             />
           </Card>

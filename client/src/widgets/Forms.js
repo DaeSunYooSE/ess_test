@@ -55,7 +55,7 @@ const Forms = () => {
                 <Card.Header className="bg-shape bg-circle-shape text-center p-2">
                   <Link
                     className="text-white light font-sans-serif fw-bolder fs-4 z-index-1 position-relative"
-                    to="/"
+                    href="/"
                   >
                     falcon
                   </Link>
@@ -65,7 +65,7 @@ const Forms = () => {
                     <h3>Login</h3>
                     <p className="mb-0 fs--1">
                       <span className="fw-semi-bold">New User? </span>
-                      <Link to="/authentication/split/register">
+                      <Link href="/authentication/split/register">
                         Create account
                       </Link>
                     </p>

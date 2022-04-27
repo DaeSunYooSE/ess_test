@@ -36,7 +36,7 @@ const ForgetPasswordForm = () => {
         </Button>
       </Form.Group>
 
-      <Link className="fs--1 text-600" to="#!">
+      <Link className="fs--1 text-600" href="#!">
         I can't recover my account using this page
         <span className="d-inline-block ms-1"> &rarr;</span>
       </Link>

@@ -112,7 +112,7 @@ const DarkMode = () => (
         It’s effortless to switch Dark Mode in Falcon-React. You can enable Dark
         Mode by default or create a Dark/Light switch if you want. To set the
         default mode "Dark", please see the
-        <Link to="/documentation/customization/configuration">
+        <Link href="/documentation/customization/configuration">
           configuration page
         </Link>
       </p>

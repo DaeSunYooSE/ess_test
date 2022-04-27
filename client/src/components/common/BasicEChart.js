@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
+
 import merge from 'lodash.merge';
 import { getColor } from 'helpers/utils';
 
@@ -39,7 +40,7 @@ const getOption = () => ({
 
 const BasicECharts = ({ echarts, options, ...rest }) => {
   return (
-    <ReactEChartsCore
+    <EChartsReactCore
       echarts={echarts}
       option={merge(getOption(), options)}
       {...rest}

@@ -94,7 +94,7 @@ const PaymentMethod = ({ payableTotal }) => {
                         <Tooltip id="cvvinfo">Card verification value</Tooltip>
                       }
                     >
-                      <Link to="#!">
+                      <Link href="#!">
                         <FontAwesomeIcon
                           icon="question-circle"
                           className="ms-2"
@@ -178,7 +178,7 @@ const PaymentMethod = ({ payableTotal }) => {
                     not as described in details
                   </Form.Check.Label>
                 </Form.Check>
-                <Link to="#!" className="fs--1 ms-3 ps-2">
+                <Link href="#!" className="fs--1 ms-3 ps-2">
                   Learn More
                   <FontAwesomeIcon
                     icon="caret-right"
@@ -211,7 +211,7 @@ const PaymentMethod = ({ payableTotal }) => {
             </Button>
             <p className="fs--1 mt-3 mb-0">
               By clicking <strong>Confirm &amp; Pay </strong> button you agree
-              to the <Link to="#!">Terms &amp; Conditions</Link>
+              to the <Link href="#!">Terms &amp; Conditions</Link>
             </p>
           </Col>
         </Row>

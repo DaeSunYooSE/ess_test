@@ -21,7 +21,7 @@ const columns = [
     Cell: rowData => {
       const { name, avatar } = rowData.row.original;
       return (
-        <Link to="/e-commerce/customer-details">
+        <Link href="/e-commerce/customer-details">
           <Flex alignItems="center">
             {avatar.img ? (
               <Avatar src={avatar.img} size="xl" className="me-2" />

@@ -37,19 +37,19 @@ const EventDetailContent = () => {
         </p>
         <h5 className="fs-0 mt-5 mb-2 ">Tags </h5>
         <Link
-          to="#!"
+          href="#!"
           className="badge border link-secondary text-decoration-none me-1"
         >
           Things To Do In Brooklyn, NY
         </Link>
         <Link
-          to="#!"
+          href="#!"
           className="badge border link-secondary text-decoration-none me-1"
         >
           Party
         </Link>
         <Link
-          to="#!"
+          href="#!"
           className="badge border link-secondary text-decoration-none me-1"
         >
           Music

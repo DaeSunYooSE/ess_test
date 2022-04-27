@@ -6,7 +6,7 @@ import Link from 'next/link';
 const exampleCode = `
 ['primary', 'secondary', 'success', 'info', 'warning', 'danger', 'light', 'dark'].map(
   (color) => (
-    <Link to="#!" className={'d-block link-' + color} key={color} >
+    <Link href="#!" className={'d-block link-' + color} key={color} >
       {color} link
     </Link>
   )
@@ -28,7 +28,7 @@ const graysCode = `
   'white'
 ].map(
   (color) => (
-    <Link to="#!" className={'d-block link-' + color} key={color} >
+    <Link href="#!" className={'d-block link-' + color} key={color} >
       Link {color}
     </Link>
   )

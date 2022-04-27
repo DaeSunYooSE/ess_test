@@ -22,7 +22,7 @@ const Associations = ({
                 image={association.image}
                 title={association.title}
                 description={association.description}
-                to={association.to}
+                href={association.to}
               />
             </Col>
           ))}

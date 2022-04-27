@@ -37,7 +37,7 @@ const MembersRow = ({
           />
           <div className="flex-1 ms-3">
             <h6 className="mb-0 fw-semi-bold">
-              <Link className="text-dark stretched-link" to="#!">
+              <Link className="text-dark stretched-link" href="#!">
                 {name}
               </Link>
             </h6>

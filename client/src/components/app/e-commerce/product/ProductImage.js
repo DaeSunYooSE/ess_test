@@ -16,7 +16,7 @@ const sliderSettings = {
 const ProductSingleImage = ({ id, image, name, layout }) => {
   return (
     <Link
-      to={`/e-commerce/product/product-details/${id}`}
+      href={`/e-commerce/product/product-details/${id}`}
       className="d-block h-sm-100"
       key={image.id}
     >

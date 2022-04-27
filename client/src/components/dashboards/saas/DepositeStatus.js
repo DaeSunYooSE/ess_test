@@ -8,7 +8,7 @@ const DepositeStatus = () => {
     <Card className="bg-light my-3">
       <Card.Body className="p-3">
         <p className="fs--1 mb-0">
-          <Link to="#!">
+          <Link href="#!">
             <FontAwesomeIcon
               icon="exchange-alt"
               className="me-2"

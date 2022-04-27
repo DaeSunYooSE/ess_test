@@ -12,7 +12,7 @@ const Registration = () => {
         <h3>Register</h3>
         <p className="mb-0 fs--1">
           <span className="fw-semi-bold">Already User? </span>
-          <Link to="/authentication/split/login">Login</Link>
+          <Link href="/authentication/split/login">Login</Link>
         </p>
       </Flex>
       <RegistrationForm layout="split" hasLabel />

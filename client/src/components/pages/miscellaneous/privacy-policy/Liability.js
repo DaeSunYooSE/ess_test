@@ -127,7 +127,7 @@ const Liability = forwardRef((props, ref) => {
         <p className="mb-0 ps-3">
           To the extent that you are a business and we process personal data on
           your behalf in providing the Services, the{' '}
-          <Link to="#!">Data processing terms</Link> shall apply and are
+          <Link href="#!">Data processing terms</Link> shall apply and are
           incorporated into these Terms.
         </p>
       </Card.Body>

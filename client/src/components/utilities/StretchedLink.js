@@ -17,7 +17,7 @@ const stretchedLinkCode = `
       title and make up the bulk of the card's
       content.
     </Card.Text>
-    <Button as={Link} to='#!' color="primary" size="sm" className="stretched-link">
+    <Button as={Link} href='#!' color="primary" size="sm" className="stretched-link">
       Go somewhere
     </Button>
   </Card.Body>
@@ -35,14 +35,14 @@ const containingBlockCode = `
       content.
     </Card.Text>
     <Card.Text>
-      <Link className="stretched-link text-info position-relative" to="#!">
+      <Link className="stretched-link text-info position-relative" href="#!">
         Stretched link will not work here, because{' '}
         <code className="text-danger">position: relative</code> is added to the link
       </Link>
     </Card.Text>
     <Card.Text  className="card-text bg-light" style={{transform: 'rotate(0)'}}>
       This
-      <Link className="text-warning stretched-link" to="#!">
+      <Link className="text-warning stretched-link" href="#!">
         stretched link 
       </Link>
       {' '}

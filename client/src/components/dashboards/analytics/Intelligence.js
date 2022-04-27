@@ -13,7 +13,7 @@ const SingleItem = ({ icon, title, description }) => {
     <div className="border border-1 border-300 rounded-2 p-3 ask-analytics-item position-relative mb-3">
       <Flex alignItems="center" className="mb-3">
         <FontAwesomeIcon icon={icon} className="text-primary" />
-        <Link to="#!" className="stretched-link text-decoration-none">
+        <Link href="#!" className="stretched-link text-decoration-none">
           <h5 className="fs--1 text-600 mb-0 ps-3">{title}</h5>
         </Link>
       </Flex>

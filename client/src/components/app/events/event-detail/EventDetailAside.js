@@ -14,7 +14,7 @@ const EventDetailAside = () => {
             Mon, Dec 31, 2018, 11:59 PM – <br />
             Tue, Jan 1, 2019, 12:19 AM EST
           </p>
-          <Link to="#!">Add to Calendar</Link>
+          <Link href="#!">Add to Calendar</Link>
           <h6 className="mt-4">Location</h6>
           <div className="mb-1">
             Boston Harborwalk
@@ -25,7 +25,7 @@ const EventDetailAside = () => {
             <br />
             United States
           </div>
-          <Link to="#!">View Map</Link>
+          <Link href="#!">View Map</Link>
           <h6 className="mt-4">Refund Policy</h6>
           <p className="fs--1 mb-0">No Refunds</p>
         </Card.Body>

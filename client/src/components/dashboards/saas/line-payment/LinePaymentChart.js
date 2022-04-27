@@ -1,6 +1,6 @@
 import React, { forwardRef, useContext } from 'react';
 import PropTypes from 'prop-types';
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
 import * as echarts from 'echarts/core';
 import { LineChart } from 'echarts/charts';
 import {
@@ -143,7 +143,7 @@ const LinePaymentChart = forwardRef(({ data, paymentStatus, style }, ref) => {
   } = useContext(AppContext);
 
   return (
-    <ReactEChartsCore
+    <EChartsReactCore
       echarts={echarts}
       ref={ref}
       option={getOption(data, paymentStatus, isDark)}

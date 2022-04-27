@@ -19,7 +19,7 @@ const Experience = ({ experience, isLast }) => {
 
   return (
     <Flex>
-      <Link to="#!">
+      <Link href="#!">
         <Image fluid src={logo} width={56} />
       </Link>
       <div className="flex-1 position-relative ps-3">
@@ -28,7 +28,7 @@ const Experience = ({ experience, isLast }) => {
           {verified && <VerifiedBadge />}
         </h6>
         <p className="mb-1">
-          <Link to="#!">{company}</Link>
+          <Link href="#!">{company}</Link>
         </p>
         <p className="text-1000 mb-0">
           {`${startDate} - ${endDate} • ${duration}`}

@@ -27,7 +27,7 @@ const AttachmentItem = ({ setImgIndex, attachment, isLast, index }) => {
                 </div>
               ) : (
                 <>
-                  <Link to="#!" onClick={() => setNestedModal(true)}>
+                  <Link href="#!" onClick={() => setNestedModal(true)}>
                     <Background image={attachment.image} className="rounded" />
                     <div className="icon-play">
                       <FontAwesomeIcon icon="play" />
@@ -48,30 +48,30 @@ const AttachmentItem = ({ setImgIndex, attachment, isLast, index }) => {
                 {attachment.type !== 'video' ? (
                   <Link
                     onClick={() => setImgIndex(index)}
-                    to="#!"
+                    href="#!"
                     className="text-decoration-none"
                   >
                     {attachment.title}
                   </Link>
                 ) : (
                   <>
-                    <Link to="#!" onClick={() => setNestedModal(true)}>
+                    <Link href="#!" onClick={() => setNestedModal(true)}>
                       {attachment.title}
                     </Link>
                   </>
                 )}
               </>
             ) : (
-              <Link to="#!" className="text-decoration-none">
+              <Link href="#!" className="text-decoration-none">
                 {attachment.title}
               </Link>
             )}
           </h6>
-          <Link to="#!" className="link-600 fw-semi-bold">
+          <Link href="#!" className="link-600 fw-semi-bold">
             Edit
           </Link>
           <span className="mx-1">|</span>
-          <Link to="#!" className="link-600 fw-semi-bold">
+          <Link href="#!" className="link-600 fw-semi-bold">
             Remove
           </Link>
           <p className="mb-0">Uploaded at {attachment.date}</p>

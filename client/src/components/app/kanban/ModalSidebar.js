@@ -22,7 +22,7 @@ const ModalSidebar = () => {
       {addToCardMenu.map(menu => (
         <Nav key={menu.title} className="flex-lg-column fs--1">
           <Nav.Item className="me-2 me-lg-0">
-            <Nav.Link as={Link} to="#!" className="nav-link-card-details">
+            <Nav.Link as={Link} href="#!" className="nav-link-card-details">
               <FontAwesomeIcon icon={menu.icon} className="me-2" />
               {menu.title}
             </Nav.Link>
@@ -34,7 +34,7 @@ const ModalSidebar = () => {
       {actionMenu.map(menu => (
         <Nav key={menu.title} className="flex-lg-column fs--1">
           <Nav.Item className="me-2 me-lg-0">
-            <Nav.Link as={Link} to="#!" className="nav-link-card-details">
+            <Nav.Link as={Link} href="#!" className="nav-link-card-details">
               <FontAwesomeIcon icon={menu.icon} className="me-2" />
               {menu.title}
             </Nav.Link>

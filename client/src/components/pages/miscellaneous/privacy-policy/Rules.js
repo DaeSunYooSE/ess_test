@@ -23,7 +23,7 @@ const Rules = forwardRef((props, ref) => {
             addresses;
           </li>
           <li>
-            You won’t violate our <Link to="#!">Acceptable use policy</Link>,
+            You won’t violate our <Link href="#!">Acceptable use policy</Link>,
             which is part of this Agreement;
           </li>
           <li>

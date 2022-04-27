@@ -38,12 +38,12 @@ const GroupMember = ({
               className="dropdown-md px-0 py-3"
             >
               <Flex alignItems="center" className="px-3">
-                <Link to="/user/profile">
+                <Link href="/user/profile">
                   <Avatar src={user.img} className="me-2" size="2xl" />
                 </Link>
                 <div className="flex-1">
                   <h6 className="mb-0">
-                    <Link className="text-900" to="/user/profile">
+                    <Link className="text-900" href="/user/profile">
                       {user.name}
                     </Link>
                   </h6>
@@ -91,7 +91,11 @@ const GroupMember = ({
               {!addMember ? (
                 <Flex className="px-3">
                   {users.map(user => (
-                    <Link className="text-900" to="/user/profile" key={user.id}>
+                    <Link
+                      className="text-900"
+                      href="/user/profile"
+                      key={user.id}
+                    >
                       <div className="position-relative">
                         <OverlayTrigger
                           placement="top"
@@ -134,7 +138,7 @@ const GroupMember = ({
                       })
                       .map(user => (
                         <li key={user.id}>
-                          <Link to="#!">
+                          <Link href="#!">
                             <Flex
                               alignItems="center"
                               className="px-3 py-1 text-decoration-none"

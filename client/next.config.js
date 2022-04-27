@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
-const withTM = require('next-transpile-modules')(['echarts']);
+const withTM = require('next-transpile-modules')(['echarts', 'zrender']);
+const withPlugins = require('next-compose-plugins');
+
 const nextConfig = {
   async rewrites() {
     return [
@@ -17,4 +19,4 @@ const nextConfig = {
   })
 };
 
-module.exports = nextConfig;
+module.exports = withPlugins([withTM], nextConfig);

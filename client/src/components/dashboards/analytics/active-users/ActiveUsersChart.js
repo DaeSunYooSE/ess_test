@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import * as echarts from 'echarts/core';
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
 import { LineChart } from 'echarts/charts';
 import {
   GridComponent,
@@ -144,7 +144,7 @@ const getOptions = data => ({
 
 const ActiveUsersChart = ({ data }) => {
   return (
-    <ReactEChartsCore
+    <EChartsReactCore
       echarts={echarts}
       option={getOptions(data)}
       style={{ height: '16.25rem' }}

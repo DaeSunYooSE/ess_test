@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import * as echarts from 'echarts/core';
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
 import { getColor, rgbaColor, getPastDates } from 'helpers/utils';
 import dayjs from 'dayjs';
 import { tooltipFormatter, getPosition } from 'helpers/echart-utils';
@@ -138,7 +138,7 @@ const getOptions = data => ({
 const DealVSGoalChart = ({ data }) => {
   const { breakpoints } = useBreakpoints();
   return (
-    <ReactEChartsCore
+    <EChartsReactCore
       echarts={echarts}
       option={getOptions(data)}
       style={{ height: breakpoints.up('xxl') ? '14rem' : '15rem' }}

@@ -21,7 +21,7 @@ const Error404 = () => {
           </a>
           .
         </p>
-        <Link className="btn btn-primary btn-sm mt-3" to="/">
+        <Link className="btn btn-primary btn-sm mt-3" href="/">
           <FontAwesomeIcon icon={faHome} className="me-2" />
           Take me home
         </Link>

@@ -7,7 +7,7 @@ const FaqBasicItem = ({ faq, isLast }) => {
   return (
     <>
       <h6>
-        <Link to="#!">
+        <Link href="#!">
           {faq.title}
           <FontAwesomeIcon icon="caret-right" className="ms-2" />
         </Link>

@@ -40,15 +40,15 @@ const cardWithListCode = `
     </Dropdown.Item>
     <Dropdown.Divider />
     <Dropdown.Item href="#!">Set status</Dropdown.Item>
-    <Dropdown.Item tag={Link} to="/user/profile">
+    <Dropdown.Item tag={Link} href="/user/profile">
       Profile &amp; account
     </Dropdown.Item>
     <Dropdown.Item href="#!">Feedback</Dropdown.Item>
     <Dropdown.Divider />
-    <Dropdown.Item tag={Link} to="/user/settings">
+    <Dropdown.Item tag={Link} href="/user/settings">
       Settings
     </Dropdown.Item>
-    <Dropdown.Item tag={Link} to="/authentication/card/logout">
+    <Dropdown.Item tag={Link} href="/authentication/card/logout">
       Logout
     </Dropdown.Item>
   </div>
@@ -126,7 +126,7 @@ const notificationCode = `
       }}
       children='<strong>Emma Watson</strong> replied to your comment : "Hello world 😍"'
       time="Just Now"
-      to="#!"
+      href="#!"
       unread={false}
       emoji="💬"
     />

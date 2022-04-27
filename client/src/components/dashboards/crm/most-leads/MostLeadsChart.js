@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 import * as echarts from 'echarts/core';
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
 import { LineChart } from 'echarts/charts';
 import {
   GridComponent,
@@ -73,7 +73,7 @@ const MostLeadsChart = ({ data }) => {
 
   return (
     <div className="position-relative py-2">
-      <ReactEChartsCore
+      <EChartsReactCore
         ref={chartRef}
         echarts={echarts}
         option={getOptions(data)}

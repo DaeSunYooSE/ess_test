@@ -40,7 +40,7 @@ const CartItem = ({ product }) => {
     <Row className="gx-card mx-0 align-items-center border-bottom border-200">
       <Col xs={8} className="py-3">
         <div className="d-flex align-items-center">
-          <Link to="/e-commerce/product/product-details">
+          <Link href="/e-commerce/product/product-details">
             <img
               src={files[0].src}
               width="60"
@@ -51,7 +51,7 @@ const CartItem = ({ product }) => {
           <div className="flex-1">
             <h5 className="fs-0">
               <Link
-                to="/e-commerce/product/product-details"
+                href="/e-commerce/product/product-details"
                 className="text-900"
               >
                 {name}

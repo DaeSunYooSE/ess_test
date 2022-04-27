@@ -47,13 +47,13 @@ const ProductGrid = ({ product, ...rest }) => {
             <h5 className="fs-0">
               <Link
                 className="text-dark"
-                to={`/e-commerce/product/product-details/${id}`}
+                href={`/e-commerce/product/product-details/${id}`}
               >
                 {name}
               </Link>
             </h5>
             <p className="fs--1 mb-3">
-              <Link to="#!" className="text-500">
+              <Link href="#!" className="text-500">
                 {category}
               </Link>
             </p>

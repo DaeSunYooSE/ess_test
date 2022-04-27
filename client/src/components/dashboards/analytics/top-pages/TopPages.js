@@ -12,7 +12,7 @@ const columns = [
     accessor: 'path',
     Header: 'Page Path',
     Cell: rowData => (
-      <Link to="#!" className="text-primary fw-semi-bold">
+      <Link href="#!" className="text-primary fw-semi-bold">
         {rowData.row.original.path}
       </Link>
     )

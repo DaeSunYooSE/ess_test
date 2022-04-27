@@ -38,7 +38,7 @@ const PricingDefaultCard = ({
           <Button
             as={Link}
             variant={isFeatured ? 'primary' : 'outline-primary'}
-            to={url}
+            href={url}
           >
             {buttonText}
           </Button>
@@ -59,7 +59,7 @@ const PricingDefaultCard = ({
               </li>
             ))}
           </ul>
-          <Link to="#!" className="btn btn-link">
+          <Link href="#!" className="btn btn-link">
             More about {title}
           </Link>
         </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import * as echarts from 'echarts/core';
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
 import { LineChart } from 'echarts/charts';
 import {
   GridComponent,
@@ -125,7 +125,7 @@ const RealTimeUsersChart = ({ setUserCount }) => {
   }, []);
 
   return (
-    <ReactEChartsCore
+    <EChartsReactCore
       ref={chartRef}
       echarts={echarts}
       option={getOptions()}

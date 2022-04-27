@@ -22,7 +22,7 @@ const FalconCardFooterLink = ({
       as={Link}
       variant="link"
       size="lg"
-      to={to}
+      href={to}
       className="w-100 py-2"
       {...rest}
     >

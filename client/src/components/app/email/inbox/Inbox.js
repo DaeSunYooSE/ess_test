@@ -152,7 +152,7 @@ const InboxElement = () => {
               size="sm"
               icon="plus"
               as={Link}
-              to="/email/compose"
+              href="/email/compose"
               transform="shrink-3"
             >
               Compose
@@ -193,7 +193,7 @@ const InboxElement = () => {
       <InboxFooter
         totalItems={totalItems}
         from={from}
-        to={to}
+        href={to}
         canNextPage={canNextPage}
         canPreviousPage={canPreviousPage}
         nextPage={nextPage}

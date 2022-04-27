@@ -50,13 +50,13 @@ const ShoppingCart = () => {
                 icon="chevron-left"
                 transform="shrink-4"
                 as={Link}
-                to="/e-commerce/product/product-list"
+                href="/e-commerce/product/product-list"
               >
                 Continue Shopping
               </IconButton>
               <Button
                 as={Link}
-                to="/e-commerce/checkout"
+                href="/e-commerce/checkout"
                 variant="primary"
                 size="sm"
               >
@@ -136,7 +136,7 @@ const ShoppingCart = () => {
             </Form>
             <Button
               as={Link}
-              to="/e-commerce/checkout"
+              href="/e-commerce/checkout"
               variant="primary"
               size="sm"
             >

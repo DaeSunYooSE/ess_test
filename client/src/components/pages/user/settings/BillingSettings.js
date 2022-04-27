@@ -12,14 +12,14 @@ const BillingSettings = () => {
         <p className="fs-0">
           <strong>Developer</strong> - Unlimited private repositories
         </p>
-        <Button as={Link} variant="falcon-default" size="sm" to="#!">
+        <Button as={Link} variant="falcon-default" size="sm" href="#!">
           Update Plan
         </Button>
       </Card.Body>
       <Card.Body className="bg-light border-top">
         <h5>Payment</h5>
         <p className="fs-0">You have not added any payment.</p>
-        <Button as={Link} variant="falcon-default" size="sm" to="#!">
+        <Button as={Link} variant="falcon-default" size="sm" href="#!">
           Add Payment
         </Button>
       </Card.Body>

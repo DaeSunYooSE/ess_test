@@ -148,7 +148,7 @@ const BillingDetails = () => {
                 placement="top"
                 overlay={<Tooltip>Card verification value</Tooltip>}
               >
-                <Link to="#!">
+                <Link href="#!">
                   <FontAwesomeIcon
                     icon="question-circle"
                     className="ms-1 text-600"

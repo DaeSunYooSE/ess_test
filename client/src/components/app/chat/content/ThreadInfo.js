@@ -91,7 +91,7 @@ const ThreadInfo = ({ thread }) => {
             <Flex className="ms-2 flex-between-center flex-1">
               <h6 className="mb-0">
                 <Link
-                  to="/user/profile"
+                  href="/user/profile"
                   className="text-decoration-none stretched-link text-700"
                 >
                   {user.name}
@@ -172,7 +172,7 @@ const ThreadInfo = ({ thread }) => {
                           <div className="d-flex flex-1 ms-2 justify-content-between">
                             <div>
                               <h6 className="mb-0">
-                                <Link to="/user/profile" className="text-700">
+                                <Link href="/user/profile" className="text-700">
                                   {member.name}
                                 </Link>
                               </h6>

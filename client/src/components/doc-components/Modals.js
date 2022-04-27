@@ -161,11 +161,11 @@ function Example() {
           <h5>Tooltips in a modal</h5>
           <p>
             <OverlayTrigger placement="top" overlay={tooltip}>
-              <Link variant="secondary" to='#!'>This link</Link>
+              <Link variant="secondary" href='#!'>This link</Link>
             </OverlayTrigger>{' '}
             and{' '}
             <OverlayTrigger placement="top" overlay={tooltip}>
-              <Link variant="secondary" to='#!'>that link</Link>
+              <Link variant="secondary" href='#!'>that link</Link>
             </OverlayTrigger>{' '}
             have tooltips on hover.
           </p>
@@ -302,8 +302,8 @@ const Modals = () => (
     <FalconComponentCard>
       <FalconComponentCard.Header title="Tooltips and Popovers" light={false}>
         <p className="mb-0 mt-2">
-          <Link to="/components/tooltips">Tooltips</Link> and{' '}
-          <Link to="/components/popovers">popovers</Link> can be placed within
+          <Link href="/components/tooltips">Tooltips</Link> and{' '}
+          <Link href="/components/popovers">popovers</Link> can be placed within
           modals as needed. When modals are closed, any tooltips and popovers
           within are also automatically dismissed.
         </p>

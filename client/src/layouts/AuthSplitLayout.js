@@ -18,7 +18,7 @@ const AuthSplitLayout = ({ children, bgProps }) => {
                 <Card.Header className="bg-shape bg-circle-shape text-center p-2">
                   <Link
                     className="text-white light font-sans-serif fw-bolder fs-4 z-index-1 position-relative"
-                    to="/"
+                    href="/"
                   >
                     falcon
                   </Link>

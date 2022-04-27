@@ -1,6 +1,6 @@
 import React from 'react';
 import * as echarts from 'echarts/core';
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
 import { BarChart } from 'echarts/charts';
 import {
   GridComponent,
@@ -137,7 +137,7 @@ const getOptions = () => ({
 
 const LeadConversationChart = () => {
   return (
-    <ReactEChartsCore
+    <EChartsReactCore
       echarts={echarts}
       option={getOptions()}
       style={{ height: '19.1rem' }}

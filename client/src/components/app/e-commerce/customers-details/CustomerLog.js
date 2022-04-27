@@ -49,7 +49,7 @@ const CustomerLog = () => {
           className="d-block w-100"
           iconAlign="right"
           as={Link}
-          to="#!"
+          href="#!"
         >
           View more logs
         </IconButton>

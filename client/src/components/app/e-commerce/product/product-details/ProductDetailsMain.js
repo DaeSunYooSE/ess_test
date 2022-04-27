@@ -46,7 +46,7 @@ const ProductDetailsMain = ({ product }) => {
   return (
     <>
       <h5>{name}</h5>
-      <Link to="#!" className="fs--1 mb-2 d-block">
+      <Link href="#!" className="fs--1 mb-2 d-block">
         {category}
       </Link>
       <div className="fs--2 mb-3 d-inline-block">
@@ -85,7 +85,7 @@ const ProductDetailsMain = ({ product }) => {
           Tags:
           {tags?.map((tag, index) => (
             <Link
-              to="#!"
+              href="#!"
               key={tag}
               className={classNames({
                 'ms-2': index === 0,

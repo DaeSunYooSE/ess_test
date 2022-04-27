@@ -30,7 +30,11 @@ const NavbarStandard = () => {
       })}
     >
       <Container>
-        <Navbar.Brand className="text-white dark__text-white" as={Link} to="/">
+        <Navbar.Brand
+          className="text-white dark__text-white"
+          as={Link}
+          href="/"
+        >
           Falcon
         </Navbar.Brand>
         <Navbar.Toggle onClick={() => setNavbarCollapsed(!navbarCollapsed)} />

@@ -13,7 +13,7 @@ const Notifications = () => {
             <h5 className="mb-1 mb-md-0">Your Notifications</h5>
           </Col>
           <Col sm="auto" className="fs--1">
-            <Link to="#!" className="font-sans-serif ms-2 ms-sm-3">
+            <Link href="#!" className="font-sans-serif ms-2 ms-sm-3">
               Mark all as read
             </Link>
             <div className="font-sans-serif ms-2 ms-sm-3"></div>

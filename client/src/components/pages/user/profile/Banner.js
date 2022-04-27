@@ -48,7 +48,7 @@ const Banner = () => {
             <div className="border-dashed-bottom my-4 d-lg-none" />
           </Col>
           <Col className="ps-2 ps-lg-3">
-            <Link to="#!">
+            <Link href="#!">
               <Flex alignItems="center" className="mb-2">
                 <FontAwesomeIcon
                   icon="user-circle"
@@ -60,7 +60,7 @@ const Banner = () => {
               </Flex>
             </Link>
             {rightSidedItems.map(item => (
-              <Link to="#!" key={item.title}>
+              <Link href="#!" key={item.title}>
                 <Flex alignItems="center" className="mb-2">
                   <img
                     src={item.image}

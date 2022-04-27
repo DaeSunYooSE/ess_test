@@ -21,7 +21,7 @@ const Event = ({ details, isLast }) => {
       <Calendar {...calendar} />
       <div className="flex-1 position-relative ps-3">
         <h6 className="fs-0 mb-0">
-          <Link to="/events/event-detail">
+          <Link href="/events/event-detail">
             <span className="me-1">{title}</span>
             {badge.title && (
               <span className={`badge badge-${badge.type} rounded-pill `}>
@@ -32,7 +32,7 @@ const Event = ({ details, isLast }) => {
         </h6>
         <p className="mb-1">
           Organized by
-          <Link to="#!" className="text-700 ps-1">
+          <Link href="#!" className="text-700 ps-1">
             {organizer}
           </Link>
         </p>

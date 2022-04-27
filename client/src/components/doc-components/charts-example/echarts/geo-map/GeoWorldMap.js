@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
 import { getColor, rgbaColor } from 'helpers/utils';
 import FalconComponentCard from 'components/common/FalconComponentCard';
 import { MapChart } from 'echarts/charts';
@@ -304,7 +304,7 @@ const tooltipFormatter = params =>
           <FontAwesomeIcon icon="sync-alt" />
         </Button>
       </div>
-        <ReactEChartsCore
+        <EChartsReactCore
           echarts={echarts}
           option={getOption()}
           style={{ height: '25rem' }}
@@ -323,7 +323,7 @@ const GeoWorldMap = () => {
         code={chartCode}
         language="jsx"
         scope={{
-          ReactEChartsCore,
+          EChartsReactCore,
           echarts,
           getColor,
           rgbaColor,

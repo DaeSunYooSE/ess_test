@@ -21,7 +21,7 @@ const columns = [
     },
     Cell: rowData => {
       return (
-        <Link to="#!">
+        <Link href="#!">
           <Flex alignItems="center">
             <Avatar size="xl" src={rowData.row.original.img} />
             <h6 className="mb-0 ps-2 text-800">{rowData.row.original.name}</h6>

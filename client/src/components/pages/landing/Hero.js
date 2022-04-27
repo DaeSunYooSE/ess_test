@@ -32,7 +32,7 @@ const Hero = () => {
             as={Link}
             variant="outline-danger"
             className="mb-4 fs--1 border-2 rounded-pill"
-            to="#!"
+            href="#!"
           >
             <span className="me-2" role="img" aria-label="Gift">
               🎁
@@ -60,7 +60,7 @@ const Hero = () => {
             variant="outline-light"
             size="lg"
             className="border-2 rounded-pill mt-4 fs-0 py-2"
-            to="#!"
+            href="#!"
           >
             Start building with the falcon
             <FontAwesomeIcon icon="play" transform="shrink-6 down-1 right-5" />
@@ -70,7 +70,7 @@ const Hero = () => {
           xl={{ span: 7, offset: 1 }}
           className="align-self-end mt-4 mt-xl-0"
         >
-          <Link to="/" className="img-landing-banner">
+          <Link href="/" className="img-landing-banner">
             <img
               className="img-fluid"
               src={isDark ? dashboardDark : dashboard}

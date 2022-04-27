@@ -47,7 +47,7 @@ const CartModal = () => {
         <Row className="g-0 align-items-center">
           <Col>
             <Flex alignItems="center">
-              <Link to={`/e-commerce/product/product-details/${product.id}`}>
+              <Link href={`/e-commerce/product/product-details/${product.id}`}>
                 <Image
                   src={product.files && product.files[0].src}
                   rounded
@@ -59,7 +59,7 @@ const CartModal = () => {
               <div className="flex-1">
                 <h5 className="fs-0">
                   <Link
-                    to={`/e-commerce/product/product-details/${product.id}`}
+                    href={`/e-commerce/product/product-details/${product.id}`}
                     className="text-900"
                   >
                     {product.name}
@@ -76,7 +76,7 @@ const CartModal = () => {
       {type !== 'remove' && (
         <Modal.Footer className="border-200">
           <Button
-            to="/e-commerce/checkout"
+            href="/e-commerce/checkout"
             as={Link}
             size="sm"
             onClick={handleClose}
@@ -86,7 +86,7 @@ const CartModal = () => {
           </Button>
           <IconButton
             as={Link}
-            to="/e-commerce/shopping-cart"
+            href="/e-commerce/shopping-cart"
             size="sm"
             className="ms-2"
             icon="chevron-right"

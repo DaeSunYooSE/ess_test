@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 
 const LCSText = ({ count, text }) => (
-  <Link className="text-700 me-1" to="#!">
+  <Link className="text-700 me-1" href="#!">
     {count} {text}
     {count !== 1 && 's'}
   </Link>

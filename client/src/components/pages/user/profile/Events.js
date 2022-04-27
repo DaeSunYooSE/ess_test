@@ -21,7 +21,7 @@ const Events = ({ cardTitle, events, ...rest }) => {
       </Card.Body>
       <FalconCardFooterLink
         title="All Events"
-        to="/events/event-list"
+        href="/events/event-list"
         size="sm"
       />
     </Card>

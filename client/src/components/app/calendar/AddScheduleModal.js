@@ -118,7 +118,7 @@ const AddScheduleModal = ({
               <Button
                 as={Link}
                 variant="link"
-                to="#!"
+                href="#!"
                 // type="button"
                 className="badge-soft-success fw-medium"
                 size="sm"
@@ -150,7 +150,7 @@ const AddScheduleModal = ({
           </Form.Group>
         </Modal.Body>
         <Modal.Footer className="bg-light px-card border-top-0">
-          <Link to="#!" className="me-3 text-600">
+          <Link href="#!" className="me-3 text-600">
             More options
           </Link>
           <Button

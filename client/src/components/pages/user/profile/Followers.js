@@ -15,7 +15,7 @@ const Followers = ({
       <Card.Header className="bg-light">
         <Flex justifyContent="between">
           <h5 className="mb-0">Followers ({totalFollowers}) </h5>
-          <Link to="/social/followers" className="font-sans-serif">
+          <Link href="/social/followers" className="font-sans-serif">
             All Members
           </Link>
         </Flex>

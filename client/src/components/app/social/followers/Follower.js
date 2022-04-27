@@ -7,7 +7,7 @@ const Follower = ({ follower }) => {
   const { avatarSrc, name, institution } = follower;
   return (
     <div className="bg-white dark__bg-1100 p-3 h-100">
-      <Link to="/user/profile">
+      <Link href="/user/profile">
         <Image
           thumbnail
           fluid
@@ -18,10 +18,10 @@ const Follower = ({ follower }) => {
         />
       </Link>
       <h6 className="mb-1">
-        <Link to="/user/profile">{name}</Link>
+        <Link href="/user/profile">{name}</Link>
       </h6>
       <p className="fs--2 mb-1">
-        <Link className="text-700" to="#!">
+        <Link className="text-700" href="#!">
           {institution}
         </Link>
       </p>

@@ -135,7 +135,7 @@ const Products = () => {
                     }
                   >
                     <Link
-                      to={`/e-commerce/product/product-${
+                      href={`/e-commerce/product/product-${
                         isList ? 'grid' : 'list'
                       }`}
                       className="text-600 px-1"

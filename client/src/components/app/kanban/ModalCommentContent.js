@@ -38,7 +38,7 @@ const ModalCommentContent = () => {
                   </li>
                   <li className="list-inline-item mr-1">
                     <Link
-                      to="#!"
+                      href="#!"
                       className="link-600 px-2 transition-base rounded"
                     >
                       <FontAwesomeIcon icon="at" />
@@ -65,18 +65,18 @@ const ModalCommentContent = () => {
 
       {comments.map(comment => (
         <Flex key={comment.id} className="mb-3">
-          <Link to="/user/profile">
+          <Link href="/user/profile">
             <Avatar src={comment.user.avatar} size="l" />
           </Link>
           <div className="flex-1 ms-2 fs--1">
             <p className="mb-1 bg-200 rounded-3 p-2">
-              <Link to="/user/profile" className="fw-semi-bold">
+              <Link href="/user/profile" className="fw-semi-bold">
                 {comment.user.name}
               </Link>{' '}
               {comment.text}
             </p>
-            <Link to="#!"> Like </Link> &bull;
-            <Link to="#!"> Reply </Link> &bull; {comment.time}
+            <Link href="#!"> Like </Link> &bull;
+            <Link href="#!"> Reply </Link> &bull; {comment.time}
           </div>
         </Flex>
       ))}

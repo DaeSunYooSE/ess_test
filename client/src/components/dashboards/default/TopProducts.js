@@ -7,7 +7,7 @@ import Link from 'next/link';
 import Flex from 'components/common/Flex';
 import { getColor } from 'helpers/utils';
 import * as echarts from 'echarts/core';
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
 import { BarChart } from 'echarts/charts';
 import {
   GridComponent,
@@ -131,7 +131,7 @@ const TopProducts = ({ data }) => {
         }
       />
       <Card.Body className="h-100">
-        <ReactEChartsCore
+        <EChartsReactCore
           echarts={echarts}
           option={getOption(data)}
           style={{ height: '100%', minHeight: '17.75rem' }}

@@ -545,8 +545,8 @@ const Layout = () => {
 
         {/* //--- MainLayout end  */}
 
-        {/* <Navigate to="/errors/404" /> */}
-        <Route path="*" element={<Navigate to="/errors/404" replace />} />
+        {/* <Navigate href="/errors/404" /> */}
+        <Route path="*" element={<Navigate href="/errors/404" replace />} />
       </Routes>
       <SettingsToggle />
       <SettingsPanel />

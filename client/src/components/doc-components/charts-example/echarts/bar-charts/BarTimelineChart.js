@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
 import { getColor } from 'helpers/utils';
 import FalconComponentCard from 'components/common/FalconComponentCard';
 import { BarChart } from 'echarts/charts';
@@ -329,7 +329,7 @@ const chartCode = `function ChartOptions() {
     ]
     });
     return (
-      <ReactEChartsCore
+      <EChartsReactCore
         echarts={echarts}
         option={getOption()}
         style={{ height: '28.75rem' }}
@@ -346,7 +346,7 @@ const BarTimelineChart = () => {
         code={chartCode}
         language="jsx"
         scope={{
-          ReactEChartsCore,
+          EChartsReactCore,
           echarts,
           getColor,
           tooltipFormatter

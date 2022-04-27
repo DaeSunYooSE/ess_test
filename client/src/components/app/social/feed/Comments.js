@@ -14,7 +14,7 @@ const Comments = ({ comments, loadComment }) => {
             <Avatar src={avatarSrc} size="xl" />
             <div className="flex-1 ms-2 fs--1">
               <p className="mb-1 bg-200 rounded-3 p-2">
-                <Link className="fw-semi-bold" to="/user/profile">
+                <Link className="fw-semi-bold" href="/user/profile">
                   {name}
                 </Link>
                 <span

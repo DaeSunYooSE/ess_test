@@ -25,7 +25,7 @@ const PricingDefault = () => {
         className="mb-3"
         titleTag="h2"
       >
-        <Link className="btn btn-sm btn-link ps-0" to="#!">
+        <Link className="btn btn-sm btn-link ps-0" href="#!">
           Have questions? Chat with us
         </Link>
       </PageHeader>
@@ -50,7 +50,7 @@ const PricingDefault = () => {
                 Looking for personal or small team task management?
               </h5>
               <p className="fs-1">
-                Try the <Link to="#!">basic version</Link> of Falcon
+                Try the <Link href="#!">basic version</Link> of Falcon
               </p>
             </Col>
           </Row>

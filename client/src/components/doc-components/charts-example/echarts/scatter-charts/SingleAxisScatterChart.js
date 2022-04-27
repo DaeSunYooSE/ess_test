@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
 import { getColor, getRandomNumber } from 'helpers/utils';
 import FalconComponentCard from 'components/common/FalconComponentCard';
 import { ScatterChart } from 'echarts/charts';
@@ -133,7 +133,7 @@ const chartCode = `function ChartOptions() {
     }
     });
     return (
-      <ReactEChartsCore
+      <EChartsReactCore
         echarts={echarts}
         option={getOption()}
         style={{ height: '31.25rem' }}
@@ -153,7 +153,7 @@ const SingleAxisScatterChart = () => {
         code={chartCode}
         language="jsx"
         scope={{
-          ReactEChartsCore,
+          EChartsReactCore,
           echarts,
           getColor,
           getRandomNumber

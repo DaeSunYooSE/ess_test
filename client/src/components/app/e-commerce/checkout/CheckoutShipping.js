@@ -49,7 +49,7 @@ const CheckoutShipping = () => {
                     </span>
                   </span>
                 </Form.Check.Label>
-                <Link to="#!" className="fs--1">
+                <Link href="#!" className="fs--1">
                   Edit
                 </Link>
               </Form.Check>

@@ -12,7 +12,7 @@ const Login = () => {
         <h3>Login</h3>
         <p className="mb-0 fs--1">
           <span className="fw-semi-bold">New User? </span>
-          <Link to="/authentication/split/register">Create account</Link>
+          <Link href="/authentication/split/register">Create account</Link>
         </p>
       </Flex>
       <LoginForm layout="split" hasLabel />

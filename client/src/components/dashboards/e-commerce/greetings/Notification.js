@@ -33,7 +33,7 @@ const Notification = ({ notification: { title, linkFor, type }, isLast }) => {
           </Flex>
         </Col>
         <Col xs="auto" className="d-flex align-items-center">
-          <Link to="#!" className="alert-link fs--1 fw-medium">
+          <Link href="#!" className="alert-link fs--1 fw-medium">
             {`View ${linkFor}`}
             <FontAwesomeIcon icon="chevron-right" className="ms-1 fs--2" />
           </Link>

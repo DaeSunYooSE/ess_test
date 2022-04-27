@@ -14,7 +14,7 @@ const columns = [
       className: 'py-3'
     },
     Cell: rowData => (
-      <Link to="#!">
+      <Link href="#!">
         <Flex alignItems="center">
           <img src={rowData.data[rowData.row.index].flag} alt="..." />
           <p className="mb-0 ps-3 country text-700">

@@ -23,7 +23,7 @@ const OrderSummary = ({
       <Card.Header className="bg-light btn-reveal-trigger d-flex flex-between-center">
         <h5 className="mb-0">Order Summary</h5>
         <Link
-          to="/e-commerce/shopping-cart"
+          href="/e-commerce/shopping-cart"
           className="btn btn-link btn-sm btn-reveal text-600"
         >
           <FontAwesomeIcon icon="pencil-alt" />

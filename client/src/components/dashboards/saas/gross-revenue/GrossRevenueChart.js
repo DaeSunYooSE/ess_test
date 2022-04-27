@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
-import ReactEChartsCore from 'echarts-for-react/lib/core';
+import EChartsReactCore from 'echarts-for-react/lib/core';
 import * as echarts from 'echarts/core';
 import { LineChart } from 'echarts/charts';
 import {
@@ -165,7 +165,7 @@ const getOption = (data, selectedMonth, previousMonth) => ({
 const GrossRevenueChart = forwardRef(
   ({ data, selectedMonth, previousMonth, ...rest }, ref) => {
     return (
-      <ReactEChartsCore
+      <EChartsReactCore
         echarts={echarts}
         ref={ref}
         option={getOption(data, selectedMonth, previousMonth)}

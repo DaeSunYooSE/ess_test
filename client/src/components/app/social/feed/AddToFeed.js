@@ -19,7 +19,7 @@ const AddToFeed = () => {
         className="bg-light"
       >
         <h5 className="mb-0">Add to your feed</h5>
-        <Link className="fs--1" to="#!">
+        <Link className="fs--1" href="#!">
           See all
         </Link>
       </Card.Header>
@@ -45,7 +45,7 @@ const SingleItem = ({ avatarSrc, name, mutual, divider }) => (
     <Avatar size="3xl" src={avatarSrc} />
     <div className="flex-1 ms-2">
       <h6 className="mb-0">
-        <Link to="/user/profile">{name}</Link>
+        <Link href="/user/profile">{name}</Link>
       </h6>
       {!!mutual && <p className="fs--1 mb-0">{mutual} mutual connections</p>}
       <IconButton

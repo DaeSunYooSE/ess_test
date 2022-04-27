@@ -20,7 +20,7 @@ const FooterList = ({ list }) => (
   <ul className="list-unstyled">
     {list.map(({ title, to }, index) => (
       <li className="mb-1" key={index}>
-        <Link className="text-600" to={to}>
+        <Link className="text-600" href={to}>
           {title}
         </Link>
       </li>
@@ -35,7 +35,7 @@ const FooterBlogList = ({ list }) => (
     {list.map((blog, index) => (
       <li key={index}>
         <h5 className="fs-0 mb-0">
-          <Link className="text-600" to="#!">
+          <Link className="text-600" href="#!">
             {blog.title}
           </Link>
         </h5>

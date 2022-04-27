@@ -13,7 +13,7 @@ const ChatContentBodyIntro = ({ user, isGroup }) => (
     <div className="flex-1">
       <h6 className="mb-0">
         <Link
-          to="/user/profile"
+          href="/user/profile"
           className=" text-decoration-none stretched-link text-700"
         >
           {user.name}

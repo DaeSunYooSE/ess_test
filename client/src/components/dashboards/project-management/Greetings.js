@@ -25,7 +25,7 @@ const Greetings = ({ data }) => {
                     <FontAwesomeIcon icon={icon} className={`text-${color}`} />
                   </div>
                   <div className="flex-1">
-                    <Link to="#!" className="stretched-link">
+                    <Link href="#!" className="stretched-link">
                       <h6 className="text-800 mb-0">{title}</h6>
                     </Link>
                     <p className="mb-0 fs--2 text-500 ">{text}</p>

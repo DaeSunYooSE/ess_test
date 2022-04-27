@@ -129,7 +129,7 @@ const listGroupBackgroundCode = `<ListGroup>
 </ListGroup>`;
 
 const linkCode = `<ListGroup>
-  <ListGroup.Item className='p-3 p-sm-4' as={Link} to='#!' action active>
+  <ListGroup.Item className='p-3 p-sm-4' as={Link} href='#!' action active>
     <Flex justifyContent="between">
       <h5 className="mb-1 text-white">List group · Bootstrap</h5>
       <small>3 days ago</small>
@@ -140,7 +140,7 @@ const linkCode = `<ListGroup>
     </p>
     <small> The most basic list group</small>
   </ListGroup.Item>
-  <ListGroup.Item className='p-3 p-sm-4' as={Link} to='#!' action>
+  <ListGroup.Item className='p-3 p-sm-4' as={Link} href='#!' action>
     <Flex justifyContent="between">
       <h5 className="mb-1">What is list group?</h5>
       <small className="text-muted">3 days ago</small>
@@ -151,7 +151,7 @@ const linkCode = `<ListGroup>
     </p>
     <small className="text-muted">Donec id elit non mi porta.</small>
   </ListGroup.Item>
-  <ListGroup.Item className='p-3 p-sm-4' as={Link} to='#!' action>
+  <ListGroup.Item className='p-3 p-sm-4' as={Link} href='#!' action>
     <Flex justifyContent="between">
       <h5 className="mb-1">What is ordered list?</h5>
       <small>3 days ago</small>

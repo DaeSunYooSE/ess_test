@@ -13,7 +13,7 @@ const DangerZone = () => {
           Transfer this account to another user or to an organization where you
           have the ability to create repositories.
         </p>
-        <Button as={Link} to="#!" variant="falcon-warning" className="w-100">
+        <Button as={Link} href="#!" variant="falcon-warning" className="w-100">
           Transfer
         </Button>
         <div className="border-dashed-bottom my-4" />
@@ -21,7 +21,7 @@ const DangerZone = () => {
         <p className="fs--1">
           Once you delete a account, there is no going back. Please be certain.
         </p>
-        <Button as={Link} to="#!" variant="falcon-danger" className="w-100">
+        <Button as={Link} href="#!" variant="falcon-danger" className="w-100">
           Deactivate Account
         </Button>
       </Card.Body>

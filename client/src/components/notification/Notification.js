@@ -20,7 +20,7 @@ const Notification = ({
       { 'notification-unread': unread, 'notification-flush': flush },
       className
     )}
-    to="#!"
+    href="#!"
   >
     {avatar && (
       <div className="notification-avatar">

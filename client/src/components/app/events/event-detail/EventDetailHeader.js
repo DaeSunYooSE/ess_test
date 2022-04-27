@@ -27,7 +27,7 @@ const EventDetailHeader = () => {
                 <h5 className="fs-0 text-capitalize">{eventInfo.title}</h5>
                 <p className="mb-0 text-capitalize">
                   by
-                  <Link className=" ms-1 " to="#!">
+                  <Link className=" ms-1 " href="#!">
                     {eventInfo.author}
                   </Link>
                 </p>

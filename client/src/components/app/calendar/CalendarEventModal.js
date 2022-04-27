@@ -109,7 +109,7 @@ const CalendarEventModal = ({
       <Modal.Footer className="bg-light px-card border-top-0">
         <Button
           as={Link}
-          to="/events/create-an-event"
+          href="/events/create-an-event"
           variant="falcon-default"
           size="sm"
         >
@@ -118,7 +118,7 @@ const CalendarEventModal = ({
         </Button>
         <Button
           as={Link}
-          to="/events/event-detail"
+          href="/events/event-detail"
           variant="falcon-primary"
           size="sm"
         >

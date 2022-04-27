@@ -23,7 +23,7 @@ const columns = [
       const { id, name, email } = rowData.row.original;
       return (
         <>
-          <Link to="/e-commerce/orders/order-details">
+          <Link href="/e-commerce/orders/order-details">
             <strong>{id}</strong>
           </Link>{' '}
           by <strong>{name}</strong> <br />

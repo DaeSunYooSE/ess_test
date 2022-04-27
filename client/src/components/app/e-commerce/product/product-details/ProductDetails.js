@@ -46,7 +46,7 @@ const ProductDetails = () => {
       <CartModal />
     </>
   ) : (
-    <Navigate to={`/e-commerce/product/product-details/${products[0].id}`} />
+    <Navigate href={`/e-commerce/product/product-details/${products[0].id}`} />
   );
 };
 
