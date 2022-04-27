@@ -26,8 +26,10 @@ const FalconCardFooterLink = ({
       className="w-100 py-2"
       {...rest}
     >
-      {title}
-      <FontAwesomeIcon icon="chevron-right" className="ms-1 fs--2" />
+      <div>
+        {title}
+        <FontAwesomeIcon icon="chevron-right" className="ms-1 fs--2" />
+      </div>
     </Button>
   </Card.Footer>
 );
