@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import 'helpers/initFA';
 import CustomLayout from '../components/layout';
+import { wrapper } from '../store';
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(false);
@@ -22,4 +23,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default wrapper.withRedux(MyApp);

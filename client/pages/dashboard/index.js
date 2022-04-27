@@ -29,7 +29,7 @@ import RunningProjects from 'components/dashboards/default/RunningProjects';
 // import TopProducts from 'components/dashboards/default/TopProducts';
 // import Weather from 'components/dashboards/default/Weather';
 
-const Dashboard = props => {
+const Dashboard = () => {
   return (
     <>
       <Row className="g-3 mb-3">
