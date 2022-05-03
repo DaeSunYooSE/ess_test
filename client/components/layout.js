@@ -9,7 +9,6 @@ const CustomLayout = props => {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#2c7be5" />
-        <link rel="manifest" href="/manifest.json" />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700|Poppins:100,200,300,400,500,600,700,800,900&display=swap"
@@ -20,7 +19,7 @@ const CustomLayout = props => {
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossOrigin="anonymous"
         />
-        <title>STND: ESS System</title>
+        <title>STND | ESS SYSTEM</title>
       </Head>
       <div className="main">
         <Main>
