@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import logo from 'assets/img/illustrations/falcon.png';
+import logo from 'assets/img/STND.png';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -28,13 +28,15 @@ const Logo = ({ at, width, className, textClass, ...rest }) => {
         )}
       >
         <Image
-          className="me-2"
+          className="me-0"
           src={logo}
           alt="Logo"
           width={width}
           height={40}
         />
-        <span className={classNames('font-sans-serif', textClass)}>falcon</span>
+        <span className={classNames('font-sans-serif', textClass)}>
+          &nbsp;STND
+        </span>
       </div>
     </Link>
   );

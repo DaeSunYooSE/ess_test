@@ -70,13 +70,15 @@ const NavbarVerticalMenu = ({ routes }) => {
       return (
         <Nav.Item as="li" key={route.name} onClick={handleNavItemClick}>
           <NavLink
-            //end={route.exact}
+            end={route.exact}
             href={route.href}
             state={{ open: route.href === '/authentication-modal' }}
             className={({ isActive }) =>
               isActive ? 'active nav-link' : 'nav-link'
             }
-          ></NavLink>
+          >
+            {route.name}
+          </NavLink>
         </Nav.Item>
       );
     }
